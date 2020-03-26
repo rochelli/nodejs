@@ -25,11 +25,11 @@
 ## Mini TP : Transformation du serveur avec Express
 
 * TP2/expressServer.js : Ce fichier lit le fichier data.csv et affiche son contenu dans la console.
-* TP2//views : Dossier contenant le template .pug et le style.css
+* TP2/views : Dossier contenant le template .pug et le style.css
 
 ### Utilisation
   node expressServer.js FILE_NAME
 
 ### Screenshot Postman 
 
-![alt text](./Screenshot/TP2.PNG) 
+![alt text](./TP2/Screenshot/TP2.PNG) 
