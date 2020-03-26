@@ -1,5 +1,3 @@
-# TPs NodeJs
-
 # TP 1
 
 ## Mini TP : Script de lecture de fichier
@@ -21,7 +19,7 @@
 ### Utilisation
   node server.js FILE_NAME
 
-## TP 2
+# TP 2
 ## Mini TP : Transformation du serveur avec Express
 
 * TP2/expressServer.js : Ce fichier lit le fichier data.csv et affiche son contenu dans la console.
