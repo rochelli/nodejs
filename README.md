@@ -70,4 +70,4 @@
 
 ### [PUT] L'identifiant est introuvable ou une ville porte déjà le même nom dans le fichier cities.json
 
-![alt text](./TP3/Screenshot/POST500.PNG) 
+![alt text](./TP3/Screenshot/PUT500.PNG) 
