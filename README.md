@@ -71,3 +71,11 @@
 ### [PUT] L'identifiant est introuvable ou une ville porte déjà le même nom dans le fichier cities.json
 
 ![alt text](./TP3/Screenshot/PUT500.PNG) 
+
+### [DELETE] Suppression d'un ville dans le fichier cities.json
+
+![alt text](./TP3/Screenshot/DELETE200.PNG) 
+
+### [DLETE] L'identifiant de la ville est introuvable dans le fichier cities.json
+
+![alt text](./TP3/Screenshot/DELETE500.PNG) 
