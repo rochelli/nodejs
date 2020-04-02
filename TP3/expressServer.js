@@ -90,7 +90,6 @@ app.put('/city/:id', function (req, res) {
 
         if (req.body.name != undefined)
         {
-            //Create File
             if(err){
 
                 console.log(erreur);
@@ -148,6 +147,56 @@ app.put('/city/:id', function (req, res) {
             return;
         }
     })
+});
+
+app.delete('/city/:id', function (req, res) {
+
+    const file_name = 'public/cities.json';
+    fs.readFile(file_name,'utf8',(err,data)=>{
+
+        if(err){
+
+            console.log(erreur);
+            res.status(500).send("File not found");
+            return;
+        }
+
+        //search id on file
+        var city_id=req.params.id;
+        const cities = JSON.parse(data);
+
+        var find = false;
+        cities.cities.forEach(function (item, index, object){
+            if(item.id == city_id){
+                //existe
+                find = true;
+                //remove from file
+                delete cities.cities[index];
+                return;
+            }
+        })
+
+        if(find){
+            //eliminate all the null values from the data
+            cities.cities = cities.cities.filter(function(x) { return x !== null }); 
+            fs.writeFile(file_name, JSON.stringify(cities), function (err) {
+                if (err) {
+                    console.log(erreur);
+                    res.status(500).send("Internal error");
+                    return;
+                }
+                res.status(200).send(cities);
+                return;
+            });  
+
+        }else{
+            res.status(500).send("City not found");
+            return;
+        }
+
+        return
+    });
+
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}`))
