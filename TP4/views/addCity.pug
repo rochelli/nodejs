@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous')
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js")
+        script
+            include ../js/addCity.js
+    body
+        div.container.mt-5
+            h1 Ajouter une ville
+            div.jumbotron
+                div.form-group
+                    label(for='name') Nom :
+                    input#name.form-control(type='text', placeholder='Nom de la ville', name='name')
+                button.btn.btn-primary.btn-block(onclick='POST()') Ajouter
+                a(class='btn btn-primary btn-block' href='/city') Liste des villes
