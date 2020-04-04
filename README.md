@@ -79,3 +79,58 @@
 ### [DLETE] L'identifiant de la ville est introuvable dans le fichier cities.json
 
 ![alt text](./TP3/Screenshot/DELETE500.PNG) 
+
+# TP 4
+## MongoDB : Transformer le serveur des TP précédents pour utiliser MongoDB et Mongoose
+
+* TP4/mongoDb.js : Fichier du serveur.
+* TP4/js : Fichiers js permettant de générer les appels à l'API.
+* TP4/views : Fichier de template permettant de générer les fichiers HTML.
+
+### [GET] Récupération de la liste des villes dans la base de données
+
+![alt text](./TP4/Screenshot/GET200.PNG) 
+
+### [POST] Ajout d'une ville dans la base de données
+
+![alt text](./TP4/Screenshot/POST200.PNG) 
+
+### [POST] Une ville dans la base de données porte déjà la même nom
+
+![alt text](./TP4/Screenshot/POST500.PNG)
+
+### [PUT] Modification du nom d'une ville dans la base de données
+
+![alt text](./TP4/Screenshot/PUT200.PNG)
+
+### [PUT] Une ville porte déjà le même nom
+
+![alt text](./TP4/Screenshot/PUT500Already.PNG)
+
+### [PUT] L'identifiant n'est pas trouvé dans la base de donnée
+
+![alt text](./TP4/Screenshot/PUT500IdNotFound.PNG)
+
+### [DELETE] Suppression de la ville dans la base de données
+
+![alt text](./TP4/Screenshot/DELETE200.PNG)
+
+### [DELETE] Identifiant non trouvé dans la base de donnée
+
+![alt text](./TP4/Screenshot/DELETE500.PNG)
+
+### [UI GET /] Interface permettant d'ajouter une ville 
+
+![alt text](./TP4/Screenshot/ajouterVille.PNG)
+
+### [UI GET /city] Modification d'un ville via le bouton "Modifier". Redirection vers la liste des villes en cas de succès
+
+![alt text](./TP4/Screenshot/modification.PNG)
+
+### [UI GET /city] Modification d'un ville via le bouton "Supprimer". Redirection vers la liste des villes en cas de succès
+
+![alt text](./TP4/Screenshot/suppression.PNG)
+
+### [UI GET /city] Liste des villes dans la base de données
+
+![alt text](./TP4/Screenshot/liste.PNG)
