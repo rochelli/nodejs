@@ -87,7 +87,7 @@
 * TP4/views : Fichier de template permettant de générer les fichiers HTML.
 
 ## Utilisation
-  `node mongoDb.js
+  `node mongoDb.js`
 
 ## Screenshot Postman
 
