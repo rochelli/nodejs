@@ -1,5 +1,4 @@
 # TP 1
-
 ## Mini TP : Script de lecture de fichier
 
 * TP1/script.js : Ce fichier lit le fichier data.csv et affiche son  contenu dans la console.
@@ -86,6 +85,11 @@
 * TP4/mongoDb.js : Fichier du serveur.
 * TP4/js : Fichiers js permettant de générer les appels à l'API.
 * TP4/views : Fichier de template permettant de générer les fichiers HTML.
+
+## Utilisation
+  `node mongoDb.js
+
+## Screenshot Postman
 
 ### [GET] Récupération de la liste des villes dans la base de données
 
