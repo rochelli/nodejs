@@ -75,7 +75,7 @@
 
 ![alt text](./TP3/Screenshot/DELETE200.PNG) 
 
-### [DLETE] L'identifiant de la ville est introuvable dans le fichier cities.json
+### [DELETE] L'identifiant de la ville est introuvable dans le fichier cities.json
 
 ![alt text](./TP3/Screenshot/DELETE500.PNG) 
 
